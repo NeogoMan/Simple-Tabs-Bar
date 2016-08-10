@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#999999"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:id="@+id/tabs_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+
+        <com.app.ecommerce.ui.views.TabView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            app:tabIcon="@mipmap/ic_home_off"
+            app:indicator="@mipmap/ic_home_on"
+            android:layout_weight="1"/>
+
+
+        <com.app.ecommerce.ui.views.TabView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            app:tabIcon="@mipmap/ic_settings_off"
+            app:indicator="@mipmap/ic_settings_on"
+            android:layout_weight="1"/>
+
+
+        <com.app.ecommerce.ui.views.TabView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            app:tabIcon="@mipmap/ic_search_off"
+            app:indicator="@mipmap/ic_search_on"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#999999"
+        android:layout_height="1dp" />
+
+</LinearLayout>
